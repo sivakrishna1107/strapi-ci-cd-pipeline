@@ -2,8 +2,8 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_security_group" "strapi_sg" {
-  name = "strapi-sg"
+resource "aws_security_group" "strapi_sg-siva" {
+  name = "strapi-sg-siva"
 
   ingress {
     from_port   = 22
