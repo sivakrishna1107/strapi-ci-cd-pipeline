@@ -31,8 +31,7 @@ resource "aws_instance" "strapi" {
   ami           = var.ami_id
   instance_type = var.instance_type
   key_name      = var.key_name
-
-  security_groups = [aws_security_group.strapi_sg.name]
+  security_groups = [aws_security_group.strapi_sg-siva.name]
 
   root_block_device {
     volume_size = 15
